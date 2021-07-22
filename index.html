@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body onload="initGame()">
+    <h1>💣Mine Sweeper</h1>
+    <div class="difficulty"><button onclick="setLevel('beginner')">Beginner</button>
+        <button onclick="setLevel('intermediate')">Intermediate</button>
+        <button onclick="setLevel('expert')">Expert</button>
+    </div>
+    <div class="lives">Lives Left :<span class="lives2">💖💖💖</span></div>
+    <div class="smiley" onclick="restartGame()">😀</div>
+    <div class="board-container"></div>
+    <div class="timer">
+      Timer : <label id="minutes">00</label>:<label id="seconds">00</label>
+    </div>
+
+    <div class="footer">coffeeright Vincent A 2021 ©</div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
